@@ -1,38 +1,21 @@
-export default function App() {
-  console.log('Hello Console!');
+import styles from "./styles";
 
-  return (
-    <div>
-      <header className="fixed w-full">
-        <div className="bg-blue-500 p-4 flex justify-between">
-          <div className="text-center font-semibold text-xl">
-            Projeto React / TypeScript
-          </div>
-          <div className="flex">
-            <div className="mx-3 text-center font-semibold text-xl">
-              Avaliações
-            </div>
-            <div className="mx-3 text-center font-semibold text-xl">
-              Avaliações
-            </div>
-            <div className="mx-3 text-center font-semibold text-xl">
-              Avaliações
-            </div>
-            <div className="mx-3 text-center font-semibold text-xl">
-              Avaliações
-            </div>
-          </div>
-          <div className="text-center font-semibold text-xl">
-            Entrar
-          </div>
-        </div>
-      </header>
+import {Navbar,Hero,Footer,Testmonials,LoginCard} from './components'
 
-      <main className="pt-20">
-        <div className="container mx-auto">
-          <h2>Hello World!</h2>
+export const App = () => (
+    <div className="w-full overflow-hidden bg-blue-300">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar/>
         </div>
-      </main>
+      </div>
+      <div className={`${styles.flexStart} bg-blue-300`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero/>
+        </div>
+      </div>
     </div>
-  );
-}
+  )
+
+
+export default App;
