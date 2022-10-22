@@ -4,8 +4,8 @@ import { navLinks } from "../constants";
 export const Navbar = () => {
   const [active, setActive] = useState("Home");
   return (
-    <nav className='w-full flex py-2 justify-between items-center navbar'>
-      <h1 className='text-white text-xl mr-10'>Nome da Marca</h1>
+    <nav className='w-full flex py-6 justify-between items-center z-50 bg-gray-800 bg-opacity-40 fixed'>
+      <h1 className='text-white text-xl mx-10'>Nome da Marca</h1>
       <ul className="list-none sm:flex hidden justify-start items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -19,7 +19,6 @@ export const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className='text-white bg-blue-600 font-poppins font-normal cursor-pointer text-[16px] p-4 rounded-md'>Entre agora</div>
     </nav>
   )
 }

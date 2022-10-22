@@ -3,18 +3,18 @@ import styles from "./styles";
 import {Navbar,Hero,Footer,Testmonials,About} from './components'
 
 export const App = () => (
-    <div className="w-full overflow-hidden bg-blue-300">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
+    <div className="w-full overflow-hidden">
+      <div >
+        <div >
           <Navbar/>
         </div>
       </div>
-      <div className={`${styles.flexStart} bg-blue-300`}>
-        <div className={`${styles.boxWidth}`}>
+      <div >
+        <div id="home">
           <Hero/>
         </div>
       </div>
-      <div>
+      <div id="sobre">
         <About/>
       </div>
     </div>

@@ -14,21 +14,19 @@ const Hero = () => {
           <div className="flex flex-col items-center justify-end xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                The quick, brown fox <br className="hidden md:block" />
-                jumps over a{' '}
-                <span className="text-teal-accent-400">lazy dog</span>
+              Conheça seu <br className="sm:block hidden " />{""}
+              <span className="text-gradient">melhor médico</span>
               </h2>
-              <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                quae.
+              <p className="max-w-xl mb-4 text-base text-white md:text-lg">
+              Sabemos das suas grandes necessidades e 
+vamos resolver em pequena escala.
               </p>
               <a
                 href="/"
                 aria-label=""
-                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                className=" text-white bg-blue-400 rounded-md p-4 inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
               >
-                Learn more
+                Saiba Mais
                 <svg
                   className="inline-block w-3 ml-2"
                   fill="currentColor"
