@@ -4,7 +4,7 @@ import { navLinks } from "../constants";
 export const Navbar = () => {
   const [active, setActive] = useState("Home");
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar'>
+    <nav className='w-full flex py-2 justify-between items-center navbar'>
       <h1 className='text-white text-xl mr-10'>Nome da Marca</h1>
       <ul className="list-none sm:flex hidden justify-start items-center flex-1">
         {navLinks.map((nav, index) => (
